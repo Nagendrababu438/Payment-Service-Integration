@@ -1,9 +1,10 @@
 package com.myproductservice.paymentservice.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
-//import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @Entity
 @Getter
@@ -16,7 +17,5 @@ public class Payment extends BaseModel{
     private String PaymentLink;
     private Long PaymentGatewayReferenceID;
     private PaymentGateway paymentGateway;
-
-
 
 }

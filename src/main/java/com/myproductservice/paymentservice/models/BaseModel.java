@@ -1,15 +1,14 @@
 package com.myproductservice.paymentservice.models;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-@MappedSuperclass
+//@MappedSuperclass
 @Getter
 @Setter
+@Entity
 public class BaseModel {
-    @id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
